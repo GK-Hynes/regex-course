@@ -26,7 +26,7 @@ The regex will match any of the characters enclosed in square brackets.
 
 `/[bc]ook/` will match either "book" or "cook".
 
-To exclude characters you don't want to match, use a caret.
+To exclude characters you don't want from character set, use a caret.
 
 `/[^l]ook/` will match "book" and "cook" but not "look".
 
@@ -97,3 +97,19 @@ The backslash escapes the normal behaviour of these characters:
 `.` Any character except the newline character.
 
 `*` The zero-or-more quantifier (similar to `+`).
+
+## Starting and Ending Patterns
+
+A caret used outside of a character set indicates the start of the string.
+
+`/^[a-z]/i` will match a string starting with a letter.
+
+A dollar sign marks the end of the string.
+
+`/^[a-z]{5}$/i` will only match a string that is five letters long.
+
+## Alternate Characters
+
+A pipe character enclosed in parentheses means or. It basically allows you to evaluate part of a regex before evaluating the rest.
+
+`/(p|t)yre/` will match "pyre" or "tyre"
