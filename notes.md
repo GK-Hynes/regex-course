@@ -81,3 +81,19 @@ The backslash escapes the normal behaviour of these characters:
 `/d/` will match the character "d".
 
 `/\d/` will match any digit.
+
+## Special Characters
+
+`+` The one-or-more quantifier.
+
+`\` The escape character.
+
+`[]` The character set.
+
+`[^]` The negative character set.
+
+`?` The zero-or-one quantifier (makes a preceding character optional).
+
+`.` Any character except the newline character.
+
+`*` The zero-or-more quantifier (similar to `+`).
