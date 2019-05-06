@@ -112,4 +112,8 @@ A dollar sign marks the end of the string.
 
 A pipe character enclosed in parentheses means or. It basically allows you to evaluate part of a regex before evaluating the rest.
 
-`/(p|t)yre/` will match "pyre" or "tyre"
+`/(p|t)yre/` will match "pyre" or "tyre".
+
+## Creating Regexes
+
+Regexes can be created either literally `/[a-z]/gi` or using `new RegExp(/[a-z]/, "gi")`
