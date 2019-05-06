@@ -46,6 +46,8 @@ To make a range case insensitive, you will either need to use the `i` flag or in
 
 `/[a-zA-Z]/` will match uppercase or lowercase letters.
 
+`[A-Za-zÀ-ÖØ-öø-ÿ]` will match most accented characters in European languages.
+
 Ranges can also match ranges of numbers.
 
 `/[0-9]/` will match any digits.
