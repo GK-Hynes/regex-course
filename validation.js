@@ -1,11 +1,11 @@
 // Variables
 const inputs = document.querySelectorAll("input");
 const patterns = {
-  username: /^[a-z\d]{5,12}$/i,
+  username: /^[A-Za-zÀ-ÖØ-öø-ÿ\d]{5,12}$/,
   password: /^[\w@-]{8,20}$/i,
-  email: /^([a-z\d\._-]+)@([a-z\d-]+)\.([a-z]{2,66})(\.[a-z]{2,8})?$/,
+  email: /^([A-Za-zÀ-ÖØ-öø-ÿ\d\._-]+)@([A-Za-zÀ-ÖØ-öø-ÿ\d-]+)\.([A-Za-zÀ-ÖØ-öø-ÿ]{2,66})(\.[A-Za-zÀ-ÖØ-öø-ÿ]{2,8})?$/,
   telephone: /^\d{11}$/,
-  slug: /^[a-z\d-]{8,20}$/
+  slug: /^[A-Za-zÀ-ÖØ-öø-ÿ\d-]{8,20}$/
 };
 
 // Validation function
